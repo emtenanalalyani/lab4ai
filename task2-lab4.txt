@@ -1,0 +1,32 @@
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+38 ?- consult(['c:/Users/shaza/Desktop/emtenan/AI labs/Lab04_family_facts.pl']).
+true.
+
+39 ?- female(X).
+X = sara ;
+X = nora.
+
+40 ?-  male(_).
+true .
+
+41 ?- parent(X,Y), parent(Y,faisal).
+X = ali,
+Y = muhammad .
+
+42 ?-  parent(ahmad,X), female(X).
+X = sara ;
+X = nora ;
+false.
+
+43 ?- parent(X,ahmad), parent(X,muhammad)
+|    .
+X = ali.
+
+44 ?-  male(khan), parent(X,khan), parent(X,nora).
+X = ahmad.
+
+45 ?- 
